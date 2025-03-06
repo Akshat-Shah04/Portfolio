@@ -2,11 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&family=Poppins:wght@300;400;600&display=swap');
+
+/* Default Theme (Light Mode) */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-font: "Poppins", sans-serif;
+  --heading-font: "Playfair Display", serif;
 }
 
+/* Dark Mode */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -14,8 +21,65 @@
   }
 }
 
+/* Apply Global Styles */
 body {
+  font-family: var(--primary-font);
+  background-color: var(--background);
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+/* Headings with Playfair Font */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+
+/* Responsive Font Scaling */
+html {
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+/* Keyframes for Animated Border */
+@keyframes borderAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Adjusted Heading Font Sizes */
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
 }

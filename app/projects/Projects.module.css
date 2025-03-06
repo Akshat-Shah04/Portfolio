@@ -1,0 +1,50 @@
+.card {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    /* Ensure pseudo-elements stay within the card */
+}
+
+
+
+.card:hover::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(45deg, #ff0000, #800080, #1531ff, #ff0000);
+    /* Royal color palette */
+    background-size: 300% 300%;
+    animation: borderAnimation 5s infinite linear;
+    z-index: -1;
+    border-radius: 12px;
+}
+
+.card:hover::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    background: #1a1a1a;
+    /* Solid gray background */
+    border-radius: 10px;
+    z-index: -2;
+}
+
+@keyframes borderAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

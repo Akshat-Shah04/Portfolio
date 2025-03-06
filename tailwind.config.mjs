@@ -7,9 +7,20 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        playfair: ["Playfair Display", "serif"],
+        inter: ["Inter", "sans-serif"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      screens: {
+        xs: "360px", // Extra small devices
+        sm: "480px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
       },
     },
   },
