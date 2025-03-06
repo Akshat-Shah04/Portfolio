@@ -32,13 +32,13 @@ const projects = [
         link: "https://your-tourist-app.com", // Replace with actual deployed URL
         image: "/websiteLinks/touristApp.png" // Replace with an actual image path
     },
-    {
-        name: "Project Placeholder",
-        description: "Description for a future project.",
-        techStack: ["React.js", "Next.js"],
-        link: "#",
-        image: "/projects/placeholder.png"
-    }
+    // {
+    //     name: "Project Placeholder",
+    //     description: "Description for a future project.",
+    //     techStack: ["React.js", "Next.js"],
+    //     link: "#",
+    //     image: "/projects/placeholder.png"
+    // }
 ];
 
 

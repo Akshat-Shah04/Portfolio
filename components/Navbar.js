@@ -43,7 +43,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="#contact" className="hover:text-blue-400 transition">
+            <Link href="/#contact" className="hover:text-blue-400 transition">
               Contact
             </Link>
           </li>
@@ -82,7 +82,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href="#contact"
+              href="/#contact"
               className="block py-2 hover:text-blue-400 transition"
               onClick={() => setIsOpen(false)}
             >
