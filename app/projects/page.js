@@ -8,7 +8,7 @@ const projects = [
         name: "Image Editor",
         description: "An online image filtering tool that allows users to apply various filters to images.",
         techStack: ["HTML", "CSS", "JavaScript"],
-        link: "https://akshat-shah-websites-7iybbh0r0-akshat-shah04s-projects.vercel.app/imageFilter.html?nocache=1",
+        link: "https://image-filtering-akshatshah.vercel.app/imageFilter.html",
         image: "/websiteLinks/imageEditor.png"
     },
     {
